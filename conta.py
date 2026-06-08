@@ -9,7 +9,6 @@ class Conta:
         self.__saldo = 0
         self.__senha = random.randint(100000, 999999)
         self.__chavepix = []
-    
     #encapsulamento (getters e setters)
     @property
     def titular(self):
@@ -24,9 +23,6 @@ class Conta:
     def numero(self):
         return self.__numero
     @property
-    def cpf(self):
-        return self.__cpf
-    @property
     def saldo(self):
         return self.__saldo
     @property
@@ -35,7 +31,8 @@ class Conta:
     @property
     def senha(self):
         return self.__senha
-    
+        
+        
 
     # métodos da classe
     def extrato(self):
